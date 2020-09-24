@@ -25,33 +25,9 @@ Pod::Spec.new do |s|
         "Sources/SentryCrash/**/*.{h,m,mm,c,cpp}"
         
       sp.public_header_files =
-        "Sources/Sentry/include/Sentry.h",
-        "Sources/Sentry/include/SentryBreadcrumb.h",
+        "Sources/Sentry/Public/*.h",
         "Sources/Sentry/include/SentryBreadcrumbTracker.h", # we should be able to remove this
-        "Sources/Sentry/include/SentryClient.h",
-        "Sources/Sentry/include/SentryCrashExceptionApplication.h",
-        "Sources/Sentry/include/SentryDebugMeta.h",
-        "Sources/Sentry/include/SentryDefines.h",
-        "Sources/Sentry/include/SentryDsn.h",
-        "Sources/Sentry/include/SentryEnvelope.h",
-        "Sources/Sentry/include/SentryEnvelopeItemType.h",
-        "Sources/Sentry/include/SentryError.h",
-        "Sources/Sentry/include/SentryEvent.h",
-        "Sources/Sentry/include/SentryException.h",
-        "Sources/Sentry/include/SentryFrame.h",
-        "Sources/Sentry/include/SentryHub.h",
-        "Sources/Sentry/include/SentryId.h",
-        "Sources/Sentry/include/SentryInstallation.h", # we should be able to remove this
-        "Sources/Sentry/include/SentryIntegrationProtocol.h",
-        "Sources/Sentry/include/SentryMechanism.h",
-        "Sources/Sentry/include/SentryOptions.h",
-        "Sources/Sentry/include/SentrySDK.h",
-        "Sources/Sentry/include/SentryScope.h",
-        "Sources/Sentry/include/SentrySerializable.h",
-        "Sources/Sentry/include/SentrySession.h",
-        "Sources/Sentry/include/SentryStacktrace.h",
-        "Sources/Sentry/include/SentryThread.h",
-        "Sources/Sentry/include/SentryUser.h"
-        
+        "Sources/Sentry/include/SentryInstallation.h" # we should be able to remove this
+       
   end
 end
